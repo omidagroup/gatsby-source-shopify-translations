@@ -52,6 +52,11 @@ exports.createSchemaCustomization = function ({ actions }) {
       edges: [CollectionNode]
     }
 
+    type Seo {
+      title: String
+      description: String
+    }
+
     type ShopifyTranslatedProduct implements Node {
       id: ID
       title: String
@@ -63,6 +68,7 @@ exports.createSchemaCustomization = function ({ actions }) {
       options: [Option]
       variants: VariantEdges
       metafields: [Metafield]
+      seo: [Seo]
     }
 
     type ShopifyTranslatedCollection implements Node {
@@ -71,6 +77,7 @@ exports.createSchemaCustomization = function ({ actions }) {
       description: String
       descriptionHtml: String
       handle: String
+      seo: [Seo]
     }
   `)
 }

@@ -46,6 +46,10 @@ exports.translatedProductsQuery = (ids, identifiers) => {
               value
               namespace
             }
+            seo {
+              title
+              description
+            }
           }
         }
       }
@@ -69,6 +73,10 @@ exports.translatedCollectionsQuery = (ids) => {
             description
             descriptionHtml
             handle
+            seo {
+              title
+              description 
+            }
           }
         }
       }
