@@ -1,0 +1,7 @@
+"use strict";
+
+exports.createSchemaCustomization = function (_ref) {
+  var actions = _ref.actions;
+  var createTypes = actions.createTypes;
+  createTypes("\n    type Locale implements Node {\n      language: String\n      ns: String\n      data: String\n      fileAbsolutePath: String\n    }\n\n    type Option {\n      name: String\n      values: [String]\n    }\n\n    type SelectedOptions {\n      name: String\n      value: String\n    }\n    \n    type Variant {\n      id: String\n      title: String\n      selectedOptions: [SelectedOptions]\n    }\n\n    type VariantNode {\n      node: Variant\n    }\n\n    type VariantEdges {\n      edges: [VariantNode]\n    }\n\n    type Metafield {\n      namespace: String\n      key: String\n      value: String\n    }\n\n    type Collection {\n      id: String\n      title: String\n    }\n\n    type CollectionNode {\n      node: Collection\n    }\n\n    type CollectionEdges {\n      edges: [CollectionNode]\n    }\n\n    type ShopifyTranslatedProduct implements Node {\n      id: ID\n      title: String\n      description: String\n      descriptionHtml: String\n      handle: String\n      productType: String\n      collections: CollectionEdges\n      options: [Option]\n      variants: VariantEdges\n      metafields: [Metafield]\n    }\n\n    type ShopifyTranslatedCollection implements Node {\n      id: ID\n      title: String\n      description: String\n      descriptionHtml: String\n      handle: String\n    }\n  ");
+};
