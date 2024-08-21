@@ -78,7 +78,7 @@ async function sourceAllNodes(gatsbyApi, pluginOptions) {
               metafields: node.metafields
               ? node.metafields.filter((metafield) => metafield)
               : [],
-              handle: slugify(node.title),
+              handle: node.handle,
               storefrontId: node.id,
               locale: lang,
             }

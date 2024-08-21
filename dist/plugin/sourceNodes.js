@@ -108,7 +108,7 @@ function _sourceAllNodes() {
                               metafields: node.metafields ? node.metafields.filter(function (metafield) {
                                 return metafield;
                               }) : [],
-                              handle: slugify(node.title),
+                              handle: node.handle,
                               storefrontId: node.id,
                               locale: lang
                             });
