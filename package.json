@@ -14,21 +14,18 @@
   "author": "Federico Verrengia",
   "license": "MIT",
   "dependencies": {
-    "@apollo/client": "^3.5.8",
-    "@babel/traverse": "^7.25.3",
-    "ws": ">=8.17.1"
+    "@apollo/client": "^3.5.8"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.8",
-    "@babel/core": "^7.25.2",
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
     "babel-preset-gatsby-package": "^2.4.0",
     "gatsby": "^4.4.0",
-    "standard-version": "^9.3.2",
-    "ws": ">=8.17.1"
+    "standard-version": "^9.3.2"
   },
   "peerDependencies": {
-    "gatsby": "^4.4.0",
-    "gatsby-source-shopify": "^6.0.0",
+    "gatsby": "^4.5.0",
+    "gatsby-source-shopify": "^4.0.0",
     "i18next": "^20.x || ^21.x",
     "react": "^17.x",
     "react-i18next": "^11.12.0"
