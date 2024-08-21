@@ -14,14 +14,17 @@
   "author": "Federico Verrengia",
   "license": "MIT",
   "dependencies": {
-    "@apollo/client": "^3.5.8"
+    "@apollo/client": "^3.5.8",
+    "@babel/traverse": "^7.25.3",
+    "ws": ">=8.17.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.8",
-    "@babel/core": "^7.16.7",
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
     "babel-preset-gatsby-package": "^2.4.0",
     "gatsby": "^4.4.0",
-    "standard-version": "^9.3.2"
+    "standard-version": "^9.3.2",
+    "ws": ">=8.17.1"
   },
   "peerDependencies": {
     "gatsby": "^4.5.0",
