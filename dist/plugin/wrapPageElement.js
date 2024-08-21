@@ -7,7 +7,7 @@ var _react = _interopRequireDefault(require("react"));
 var _i18next = _interopRequireDefault(require("i18next"));
 var _reactI18next = require("react-i18next");
 var _context = require("../context");
-var wrapPageElement = function wrapPageElement(_ref, _ref2) {
+var wrapPageElement = exports.wrapPageElement = function wrapPageElement(_ref, _ref2) {
   var _data$localeJsonNodeN;
   var element = _ref.element,
     props = _ref.props;
@@ -66,4 +66,3 @@ var wrapPageElement = function wrapPageElement(_ref, _ref2) {
     value: context
   }, element);
 };
-exports.wrapPageElement = wrapPageElement;

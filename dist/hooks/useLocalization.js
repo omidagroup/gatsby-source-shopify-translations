@@ -6,7 +6,7 @@ var _react = require("react");
 var _defaultOptions = require("../utils/default-options");
 var _context = require("../context");
 var _helpers = require("../helpers");
-var useLocalization = function useLocalization() {
+var useLocalization = exports.useLocalization = function useLocalization() {
   var _useContext = (0, _react.useContext)(_context.LocaleContext),
     language = _useContext.language,
     defaultLang = _useContext.defaultLang;
@@ -18,4 +18,3 @@ var useLocalization = function useLocalization() {
     localizedPath: _helpers.localizedPath
   };
 };
-exports.useLocalization = useLocalization;

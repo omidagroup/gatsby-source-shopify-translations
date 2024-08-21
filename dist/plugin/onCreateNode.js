@@ -11,7 +11,7 @@ function unstable_shouldOnCreateNode(_ref) {
   // We only care about JSON content.
   return node.internal.mediaType === "application/json";
 }
-var onCreateNode = /*#__PURE__*/function () {
+var onCreateNode = exports.onCreateNode = /*#__PURE__*/function () {
   var _ref4 = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee(_ref2, _ref3) {
     var node, actions, loadNodeContent, createNodeId, createContentDigest, reporter, _ref3$localeJsonSourc, localeJsonSourceName, absolutePath, type, sourceInstanceName, relativeDirectory, name, id, activity, language, content, data, hint, createNode, createParentChildLink, localeNode;
     return _regenerator.default.wrap(function _callee$(_context) {
@@ -99,4 +99,3 @@ var onCreateNode = /*#__PURE__*/function () {
     return _ref4.apply(this, arguments);
   };
 }();
-exports.onCreateNode = onCreateNode;
