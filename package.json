@@ -27,8 +27,8 @@
     "ws": ">=8.17.1"
   },
   "peerDependencies": {
-    "gatsby": "^4.5.0",
-    "gatsby-source-shopify": "^4.0.0",
+    "gatsby": "^4.4.0",
+    "gatsby-source-shopify": "^8.13.1",
     "i18next": "^20.x || ^21.x",
     "react": "^17.x",
     "react-i18next": "^11.12.0"
